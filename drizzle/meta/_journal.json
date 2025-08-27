@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1756189809398,
+      "tag": "0000_violet_night_thrasher",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1756273805287,
+      "tag": "0001_overrated_toxin",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1756300079743,
+      "tag": "0002_dapper_vermin",
+      "breakpoints": true
+    }
+  ]
+}
