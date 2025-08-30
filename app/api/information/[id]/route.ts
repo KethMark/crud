@@ -5,10 +5,11 @@ import { NextResponse } from "next/server";
 
 export async function DELETE(
   req: Request,
-  { params }: { params: Promise<{ id: number }> }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = await params;
+    const { id: IdSt } = await params;
+    const id = parseInt(IdSt) //if we use string for represent the ID, pwd dli ni nato i parse since params always represent string.
 
     await db.delete(usersTable).where(eq(usersTable.id, id));
 
@@ -22,10 +23,11 @@ export async function DELETE(
 
 export async function PUT(
   req: Request,
-  { params }: { params: Promise<{ id: number }> }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = await params;
+    const { id: IdSt } = await params;
+    const id = parseInt(IdSt)
 
     const { name, email, address, age, country } = await req.json();
 
