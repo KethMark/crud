@@ -39,3 +39,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# DATABASE_URL=postgresql://neondb_owner:npg_DCesTt24jyxP@ep-wispy-star-a1yic9hs-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
